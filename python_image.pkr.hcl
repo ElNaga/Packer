@@ -17,7 +17,7 @@ build {
   }
 
   post-processor "docker-tag" {
-    repository = "_/python"
+    repository = "python"
     tags       = ["latest"]
   }
 }
