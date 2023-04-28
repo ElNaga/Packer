@@ -1,0 +1,66 @@
+[1;32mdocker.python_base: output will be in this color.[0m
+
+[1;32m==> docker.python_base: Creating a temporary directory for sharing data...[0m
+[1;32m==> docker.python_base: Pulling Docker image: python:3.9[0m
+[0;32m    docker.python_base: 3.9: Pulling from library/python[0m
+[0;32m    docker.python_base: Digest: sha256:2d8875d28ca023a9056a828518adcdd634ba03740e1e3b197c06eb4527c6152c[0m
+[0;32m    docker.python_base: Status: Image is up to date for python:3.9[0m
+[0;32m    docker.python_base: docker.io/library/python:3.9[0m
+[1;32m==> docker.python_base: Starting docker container...[0m
+[0;32m    docker.python_base: Run command: docker run -v /home/aleksandar/.config/packer/tmp1222555239:/packer-files -d -i -t --entrypoint=/bin/sh -- python:3.9[0m
+[0;32m    docker.python_base: Container ID: 4d84d9d43802682b7786871be89b9401c097843a77a327fd5857ced72ce1456e[0m
+[1;32m==> docker.python_base: Using docker communicator to connect: 172.17.0.2[0m
+[1;32m==> docker.python_base: Provisioning with shell script: /tmp/packer-shell1111863288[0m
+[0;32m    docker.python_base: Get:1 http://deb.debian.org/debian bullseye InRelease [116 kB][0m
+[0;32m    docker.python_base: Get:2 http://deb.debian.org/debian-security bullseye-security InRelease [48.4 kB][0m
+[0;32m    docker.python_base: Get:3 http://deb.debian.org/debian bullseye-updates InRelease [44.1 kB][0m
+[0;32m    docker.python_base: Get:4 http://deb.debian.org/debian bullseye/main amd64 Packages [8183 kB][0m
+[0;32m    docker.python_base: Get:5 http://deb.debian.org/debian-security bullseye-security/main amd64 Packages [237 kB][0m
+[0;32m    docker.python_base: Get:6 http://deb.debian.org/debian bullseye-updates/main amd64 Packages [14.6 kB][0m
+[0;32m    docker.python_base: Fetched 8643 kB in 2s (5468 kB/s)[0m
+[0;32m    docker.python_base: Reading package lists...[0m
+[0;32m    docker.python_base: Reading package lists...[0m
+[0;32m    docker.python_base: Building dependency tree...[0m
+[0;32m    docker.python_base: Reading state information...[0m
+[0;32m    docker.python_base: Calculating upgrade...[0m
+[0;32m    docker.python_base: The following packages will be upgraded:[0m
+[0;32m    docker.python_base:   libxml2 libxml2-dev[0m
+[0;32m    docker.python_base: 2 upgraded, 0 newly installed, 0 to remove and 0 not upgraded.[0m
+[0;32m    docker.python_base: Need to get 1483 kB of archives.[0m
+[0;32m    docker.python_base: After this operation, 2048 B of additional disk space will be used.[0m
+[0;32m    docker.python_base: Get:1 http://deb.debian.org/debian-security bullseye-security/main amd64 libxml2-dev amd64 2.9.10+dfsg-6.7+deb11u4 [790 kB][0m
+[0;32m    docker.python_base: Get:2 http://deb.debian.org/debian-security bullseye-security/main amd64 libxml2 amd64 2.9.10+dfsg-6.7+deb11u4 [693 kB][0m
+[1;31m==> docker.python_base: debconf: delaying package configuration, since apt-utils is not installed[0m
+[0;32m    docker.python_base: Fetched 1483 kB in 0s (7359 kB/s)[0m
+[0;32m    docker.python_base: (Reading database ... 23426 files and directories currently installed.)[0m
+[0;32m    docker.python_base: Preparing to unpack .../libxml2-dev_2.9.10+dfsg-6.7+deb11u4_amd64.deb ...[0m
+[0;32m    docker.python_base: Unpacking libxml2-dev:amd64 (2.9.10+dfsg-6.7+deb11u4) over (2.9.10+dfsg-6.7+deb11u3) ...[0m
+[0;32m    docker.python_base: Preparing to unpack .../libxml2_2.9.10+dfsg-6.7+deb11u4_amd64.deb ...[0m
+[0;32m    docker.python_base: Unpacking libxml2:amd64 (2.9.10+dfsg-6.7+deb11u4) over (2.9.10+dfsg-6.7+deb11u3) ...[0m
+[0;32m    docker.python_base: Setting up libxml2:amd64 (2.9.10+dfsg-6.7+deb11u4) ...[0m
+[0;32m    docker.python_base: Setting up libxml2-dev:amd64 (2.9.10+dfsg-6.7+deb11u4) ...[0m
+[0;32m    docker.python_base: Processing triggers for libc-bin (2.31-13+deb11u5) ...[0m
+[0;32m    docker.python_base: Requirement already satisfied: pip in /usr/local/lib/python3.9/site-packages (22.0.4)[0m
+[0;32m    docker.python_base: Collecting pip[0m
+[0;32m    docker.python_base:   Downloading pip-23.1.2-py3-none-any.whl (2.1 MB)[0m
+[0;32m    docker.python_base:      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 2.1/2.1 MB 9.5 MB/s eta 0:00:00[0m
+[0;32m    docker.python_base: Installing collected packages: pip[0m
+[0;32m    docker.python_base:   Attempting uninstall: pip[0m
+[0;32m    docker.python_base:     Found existing installation: pip 22.0.4[0m
+[0;32m    docker.python_base:     Uninstalling pip-22.0.4:[0m
+[0;32m    docker.python_base:       Successfully uninstalled pip-22.0.4[0m
+[0;32m    docker.python_base: Successfully installed pip-23.1.2[0m
+[1;31m==> docker.python_base: WARNING: Running pip as the 'root' user can result in broken permissions and conflicting behaviour with the system package manager. It is recommended to use a virtual environment instead: https://pip.pypa.io/warnings/venv[0m
+[1;32m==> docker.python_base: Committing the container[0m
+[0;32m    docker.python_base: Image ID: sha256:3f5f59647ef89b617eda8c551abba45fe6b2c71d0379a9d23f2739c9b88d9066[0m
+[1;32m==> docker.python_base: Killing the container: 4d84d9d43802682b7786871be89b9401c097843a77a327fd5857ced72ce1456e[0m
+[1;32m==> docker.python_base: Running post-processor:  (type docker-tag)[0m
+[0;32m    docker.python_base (docker-tag): Tagging image: sha256:3f5f59647ef89b617eda8c551abba45fe6b2c71d0379a9d23f2739c9b88d9066[0m
+[0;32m    docker.python_base (docker-tag): Repository: python:latest[0m
+[1;32mBuild 'docker.python_base' finished after 9 seconds 225 milliseconds.[0m
+
+==> Wait completed after 9 seconds 225 milliseconds
+
+==> Builds finished. The artifacts of successful builds are:
+--> docker.python_base: Imported Docker image: sha256:3f5f59647ef89b617eda8c551abba45fe6b2c71d0379a9d23f2739c9b88d9066
+--> docker.python_base: Imported Docker image: python:latest with tags python:latest
