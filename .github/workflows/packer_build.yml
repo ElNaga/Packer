@@ -26,6 +26,7 @@ jobs:
     - name: Build Docker image
       run: |
         packer build python_image.pkr.hcl | tee output.log
+        cat output.log
         export IMAGE_ID=$(cat output.log | grep 'docker' | awk '{print $NF}')
 
     - name: Log in to Docker Hub
