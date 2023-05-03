@@ -42,6 +42,7 @@ jobs:
 
     - name: Tag Docker image
       run: |
+        echo -n "$latest_image"
         echo -n $latest_image
         echo -n $latest_image
         echo -n $latest_image
@@ -53,8 +54,7 @@ jobs:
         echo -n $latest_image
         echo -n $latest_image
         echo -n $latest_image
-        echo -n $latest_image
-        docker tag $latest_image ${{ secrets.DOCKERHUB_USERNAME }}/python-kube:latest
+        docker tag "$latest_image" ${{ secrets.DOCKERHUB_USERNAME }}/python-kube:latest
 
     - name: Push Docker image to Docker Hub
       run: |
