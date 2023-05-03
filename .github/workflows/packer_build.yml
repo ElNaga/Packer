@@ -25,7 +25,7 @@ jobs:
 
     - name: Build Docker image
       run: |
-        packer build -var 'image_tag_file=image_tag.txt' python_image.pkr.hcl | tee output.log
+        packer build python_image.pkr.hcl | tee output.log
       env:
         PACKER_LOG: 1
 
