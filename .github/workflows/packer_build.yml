@@ -37,24 +37,24 @@ jobs:
 
     - name: Set image tag
       id: set_tag
-      run: latest_image=$(docker images --format '{{.Repository}}:{{.Tag}}' | head -n 1)
-
+      run: latest_image=$(docker images --format '{{.Repository}}:{{.Tag}}' | head -n 1) 
 
 
     - name: Tag Docker image
       run: |
-        echo $latest_image
-        echo $latest_image
-        echo $latest_image
-        echo $latest_image
-        echo $latest_image
-        echo $latest_image
-        echo $latest_image
-        echo $latest_image
-        echo $latest_image
-        echo $latest_image
+        echo -n $latest_image
+        echo -n $latest_image
+        echo -n $latest_image
+        echo -n $latest_image
+        echo -n $latest_image
+        echo -n $latest_image
+        echo -n $latest_image
+        echo -n $latest_image
+        echo -n $latest_image
+        echo -n $latest_image
+        echo -n $latest_image
+        echo -n $latest_image
         docker tag $latest_image ${{ secrets.DOCKERHUB_USERNAME }}/python-kube:latest
-
 
     - name: Push Docker image to Docker Hub
       run: |
