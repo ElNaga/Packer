@@ -15,3 +15,188 @@
 [0;32m    docker.python_base: Get:2 http://deb.debian.org/debian-security bullseye-security InRelease [48.4 kB][0m
 [0;32m    docker.python_base: Get:3 http://deb.debian.org/debian bullseye-updates InRelease [44.1 kB][0m
 [0;32m    docker.python_base: Get:4 http://deb.debian.org/debian bullseye/main amd64 Packages [8183 kB][0m
+[0;32m    docker.python_base: Get:5 http://deb.debian.org/debian-security bullseye-security/main amd64 Packages [237 kB][0m
+[0;32m    docker.python_base: Get:6 http://deb.debian.org/debian bullseye-updates/main amd64 Packages [14.6 kB][0m
+[0;32m    docker.python_base: Fetched 8643 kB in 7s (1188 kB/s)[0m
+[0;32m    docker.python_base: Reading package lists...[0m
+[0;32m    docker.python_base: Reading package lists...[0m
+[0;32m    docker.python_base: Building dependency tree...[0m
+[0;32m    docker.python_base: Reading state information...[0m
+[0;32m    docker.python_base: Calculating upgrade...[0m
+[0;32m    docker.python_base: The following packages will be upgraded:[0m
+[0;32m    docker.python_base:   base-files debian-archive-keyring grep libc-bin libc-dev-bin libc6 libc6-dev[0m
+[0;32m    docker.python_base:   libmariadb-dev libmariadb-dev-compat libmariadb3 libncurses-dev[0m
+[0;32m    docker.python_base:   libncurses5-dev libncurses6 libncursesw5-dev libncursesw6 libpq-dev libpq5[0m
+[0;32m    docker.python_base:   libsystemd0 libtinfo6 libudev1 libxml2 libxml2-dev linux-libc-dev[0m
+[0;32m    docker.python_base:   mariadb-common ncurses-base ncurses-bin tzdata[0m
+[0;32m    docker.python_base: 27 upgraded, 0 newly installed, 0 to remove and 0 not upgraded.[0m
+[0;32m    docker.python_base: Need to get 13.2 MB of archives.[0m
+[0;32m    docker.python_base: After this operation, 56.3 kB of additional disk space will be used.[0m
+[0;32m    docker.python_base: Get:1 http://deb.debian.org/debian bullseye/main amd64 base-files amd64 11.1+deb11u7 [70.1 kB][0m
+[0;32m    docker.python_base: Get:2 http://deb.debian.org/debian bullseye/main amd64 grep amd64 3.6-1+deb11u1 [398 kB][0m
+[0;32m    docker.python_base: Get:3 http://deb.debian.org/debian bullseye/main amd64 ncurses-bin amd64 6.2+20201114-2+deb11u1 [429 kB][0m
+[0;32m    docker.python_base: Get:4 http://deb.debian.org/debian bullseye/main amd64 libc6-dev amd64 2.31-13+deb11u6 [2360 kB][0m
+[0;32m    docker.python_base: Get:5 http://deb.debian.org/debian bullseye/main amd64 libc-dev-bin amd64 2.31-13+deb11u6 [276 kB][0m
+[0;32m    docker.python_base: Get:6 http://deb.debian.org/debian bullseye/main amd64 linux-libc-dev amd64 5.10.178-3 [1617 kB][0m
+[0;32m    docker.python_base: Get:7 http://deb.debian.org/debian bullseye/main amd64 libc6 amd64 2.31-13+deb11u6 [2827 kB][0m
+[0;32m    docker.python_base: Get:8 http://deb.debian.org/debian bullseye/main amd64 libc-bin amd64 2.31-13+deb11u6 [824 kB][0m
+[0;32m    docker.python_base: Get:9 http://deb.debian.org/debian bullseye/main amd64 ncurses-base all 6.2+20201114-2+deb11u1 [272 kB][0m
+[0;32m    docker.python_base: Get:10 http://deb.debian.org/debian bullseye/main amd64 libsystemd0 amd64 247.3-7+deb11u2 [376 kB][0m
+[0;32m    docker.python_base: Get:11 http://deb.debian.org/debian bullseye/main amd64 debian-archive-keyring all 2021.1.1+deb11u1 [110 kB][0m
+[0;32m    docker.python_base: Get:12 http://deb.debian.org/debian bullseye/main amd64 libncurses5-dev amd64 6.2+20201114-2+deb11u1 [948 B][0m
+[0;32m    docker.python_base: Get:13 http://deb.debian.org/debian bullseye/main amd64 libncursesw5-dev amd64 6.2+20201114-2+deb11u1 [948 B][0m
+[0;32m    docker.python_base: Get:14 http://deb.debian.org/debian bullseye/main amd64 libncurses-dev amd64 6.2+20201114-2+deb11u1 [344 kB][0m
+[0;32m    docker.python_base: Get:15 http://deb.debian.org/debian bullseye/main amd64 libncurses6 amd64 6.2+20201114-2+deb11u1 [102 kB][0m
+[0;32m    docker.python_base: Get:16 http://deb.debian.org/debian bullseye/main amd64 libncursesw6 amd64 6.2+20201114-2+deb11u1 [132 kB][0m
+[0;32m    docker.python_base: Get:17 http://deb.debian.org/debian bullseye/main amd64 libtinfo6 amd64 6.2+20201114-2+deb11u1 [341 kB][0m
+[0;32m    docker.python_base: Get:18 http://deb.debian.org/debian bullseye/main amd64 libudev1 amd64 247.3-7+deb11u2 [168 kB][0m
+[0;32m    docker.python_base: Get:19 http://deb.debian.org/debian bullseye/main amd64 tzdata all 2021a-1+deb11u10 [286 kB][0m
+[0;32m    docker.python_base: Get:20 http://deb.debian.org/debian bullseye/main amd64 libmariadb-dev-compat amd64 1:10.5.19-0+deb11u2 [35.8 kB][0m
+[0;32m    docker.python_base: Get:21 http://deb.debian.org/debian bullseye/main amd64 mariadb-common all 1:10.5.19-0+deb11u2 [37.0 kB][0m
+[0;32m    docker.python_base: Get:22 http://deb.debian.org/debian bullseye/main amd64 libmariadb-dev amd64 1:10.5.19-0+deb11u2 [185 kB][0m
+[0;32m    docker.python_base: Get:23 http://deb.debian.org/debian bullseye/main amd64 libmariadb3 amd64 1:10.5.19-0+deb11u2 [176 kB][0m
+[0;32m    docker.python_base: Get:24 http://deb.debian.org/debian bullseye/main amd64 libpq-dev amd64 13.10-0+deb11u1 [140 kB][0m
+[0;32m    docker.python_base: Get:25 http://deb.debian.org/debian bullseye/main amd64 libpq5 amd64 13.10-0+deb11u1 [181 kB][0m
+[0;32m    docker.python_base: Get:26 http://deb.debian.org/debian bullseye/main amd64 libxml2-dev amd64 2.9.10+dfsg-6.7+deb11u4 [790 kB][0m
+[0;32m    docker.python_base: Get:27 http://deb.debian.org/debian bullseye/main amd64 libxml2 amd64 2.9.10+dfsg-6.7+deb11u4 [693 kB][0m
+[1;31m==> docker.python_base: debconf: delaying package configuration, since apt-utils is not installed[0m
+[0;32m    docker.python_base: Fetched 13.2 MB in 4s (3502 kB/s)[0m
+[0;32m    docker.python_base: (Reading database ... 23426 files and directories currently installed.)[0m
+[0;32m    docker.python_base: Preparing to unpack .../base-files_11.1+deb11u7_amd64.deb ...[0m
+[0;32m    docker.python_base: Unpacking base-files (11.1+deb11u7) over (11.1+deb11u6) ...[0m
+[0;32m    docker.python_base: Setting up base-files (11.1+deb11u7) ...[0m
+[0;32m    docker.python_base: Installing new version of config file /etc/debian_version ...[0m
+[0;32m    docker.python_base: (Reading database ... 23426 files and directories currently installed.)[0m
+[0;32m    docker.python_base: Preparing to unpack .../grep_3.6-1+deb11u1_amd64.deb ...[0m
+[0;32m    docker.python_base: Unpacking grep (3.6-1+deb11u1) over (3.6-1) ...[0m
+[0;32m    docker.python_base: Setting up grep (3.6-1+deb11u1) ...[0m
+[0;32m    docker.python_base: (Reading database ... 23426 files and directories currently installed.)[0m
+[0;32m    docker.python_base: Preparing to unpack .../ncurses-bin_6.2+20201114-2+deb11u1_amd64.deb ...[0m
+[0;32m    docker.python_base: Unpacking ncurses-bin (6.2+20201114-2+deb11u1) over (6.2+20201114-2) ...[0m
+[0;32m    docker.python_base: Setting up ncurses-bin (6.2+20201114-2+deb11u1) ...[0m
+[0;32m    docker.python_base: (Reading database ... 23426 files and directories currently installed.)[0m
+[0;32m    docker.python_base: Preparing to unpack .../libc6-dev_2.31-13+deb11u6_amd64.deb ...[0m
+[0;32m    docker.python_base: Unpacking libc6-dev:amd64 (2.31-13+deb11u6) over (2.31-13+deb11u5) ...[0m
+[0;32m    docker.python_base: Preparing to unpack .../libc-dev-bin_2.31-13+deb11u6_amd64.deb ...[0m
+[0;32m    docker.python_base: Unpacking libc-dev-bin (2.31-13+deb11u6) over (2.31-13+deb11u5) ...[0m
+[0;32m    docker.python_base: Preparing to unpack .../linux-libc-dev_5.10.178-3_amd64.deb ...[0m
+[0;32m    docker.python_base: Unpacking linux-libc-dev:amd64 (5.10.178-3) over (5.10.162-1) ...[0m
+[0;32m    docker.python_base: Preparing to unpack .../libc6_2.31-13+deb11u6_amd64.deb ...[0m
+[0;32m    docker.python_base: debconf: unable to initialize frontend: Dialog[0m
+[0;32m    docker.python_base: debconf: (TERM is not set, so the dialog frontend is not usable.)[0m
+[0;32m    docker.python_base: debconf: falling back to frontend: Readline[0m
+[0;32m    docker.python_base: debconf: unable to initialize frontend: Dialog[0m
+[0;32m    docker.python_base: debconf: (TERM is not set, so the dialog frontend is not usable.)[0m
+[0;32m    docker.python_base: debconf: falling back to frontend: Readline[0m
+[0;32m    docker.python_base: Unpacking libc6:amd64 (2.31-13+deb11u6) over (2.31-13+deb11u5) ...[0m
+[0;32m    docker.python_base: Setting up libc6:amd64 (2.31-13+deb11u6) ...[0m
+[0;32m    docker.python_base: debconf: unable to initialize frontend: Dialog[0m
+[0;32m    docker.python_base: debconf: (TERM is not set, so the dialog frontend is not usable.)[0m
+[0;32m    docker.python_base: debconf: falling back to frontend: Readline[0m
+[0;32m    docker.python_base: (Reading database ... 23426 files and directories currently installed.)[0m
+[0;32m    docker.python_base: Preparing to unpack .../libc-bin_2.31-13+deb11u6_amd64.deb ...[0m
+[0;32m    docker.python_base: Unpacking libc-bin (2.31-13+deb11u6) over (2.31-13+deb11u5) ...[0m
+[0;32m    docker.python_base: Setting up libc-bin (2.31-13+deb11u6) ...[0m
+[0;32m    docker.python_base: (Reading database ... 23426 files and directories currently installed.)[0m
+[0;32m    docker.python_base: Preparing to unpack .../ncurses-base_6.2+20201114-2+deb11u1_all.deb ...[0m
+[0;32m    docker.python_base: Unpacking ncurses-base (6.2+20201114-2+deb11u1) over (6.2+20201114-2) ...[0m
+[0;32m    docker.python_base: Setting up ncurses-base (6.2+20201114-2+deb11u1) ...[0m
+[0;32m    docker.python_base: (Reading database ... 23426 files and directories currently installed.)[0m
+[0;32m    docker.python_base: Preparing to unpack .../libsystemd0_247.3-7+deb11u2_amd64.deb ...[0m
+[0;32m    docker.python_base: Unpacking libsystemd0:amd64 (247.3-7+deb11u2) over (247.3-7+deb11u1) ...[0m
+[0;32m    docker.python_base: Setting up libsystemd0:amd64 (247.3-7+deb11u2) ...[0m
+[0;32m    docker.python_base: (Reading database ... 23426 files and directories currently installed.)[0m
+[0;32m    docker.python_base: Preparing to unpack .../debian-archive-keyring_2021.1.1+deb11u1_all.deb ...[0m
+[0;32m    docker.python_base: Unpacking debian-archive-keyring (2021.1.1+deb11u1) over (2021.1.1) ...[0m
+[0;32m    docker.python_base: Setting up debian-archive-keyring (2021.1.1+deb11u1) ...[0m
+[0;32m    docker.python_base: Removing obsolete conffile /etc/apt/trusted.gpg.d/debian-archive-stretch-automatic.gpg ...[0m
+[0;32m    docker.python_base: Removing obsolete conffile /etc/apt/trusted.gpg.d/debian-archive-stretch-security-automatic.gpg ...[0m
+[0;32m    docker.python_base: Removing obsolete conffile /etc/apt/trusted.gpg.d/debian-archive-stretch-stable.gpg ...[0m
+[0;32m    docker.python_base: (Reading database ... 23426 files and directories currently installed.)[0m
+[0;32m    docker.python_base: Preparing to unpack .../0-libncurses5-dev_6.2+20201114-2+deb11u1_amd64.deb ...[0m
+[0;32m    docker.python_base: Unpacking libncurses5-dev:amd64 (6.2+20201114-2+deb11u1) over (6.2+20201114-2) ...[0m
+[0;32m    docker.python_base: Preparing to unpack .../1-libncursesw5-dev_6.2+20201114-2+deb11u1_amd64.deb ...[0m
+[0;32m    docker.python_base: Unpacking libncursesw5-dev:amd64 (6.2+20201114-2+deb11u1) over (6.2+20201114-2) ...[0m
+[0;32m    docker.python_base: Preparing to unpack .../2-libncurses-dev_6.2+20201114-2+deb11u1_amd64.deb ...[0m
+[0;32m    docker.python_base: Unpacking libncurses-dev:amd64 (6.2+20201114-2+deb11u1) over (6.2+20201114-2) ...[0m
+[0;32m    docker.python_base: Preparing to unpack .../3-libncurses6_6.2+20201114-2+deb11u1_amd64.deb ...[0m
+[0;32m    docker.python_base: Unpacking libncurses6:amd64 (6.2+20201114-2+deb11u1) over (6.2+20201114-2) ...[0m
+[0;32m    docker.python_base: Preparing to unpack .../4-libncursesw6_6.2+20201114-2+deb11u1_amd64.deb ...[0m
+[0;32m    docker.python_base: Unpacking libncursesw6:amd64 (6.2+20201114-2+deb11u1) over (6.2+20201114-2) ...[0m
+[0;32m    docker.python_base: Preparing to unpack .../5-libtinfo6_6.2+20201114-2+deb11u1_amd64.deb ...[0m
+[0;32m    docker.python_base: Unpacking libtinfo6:amd64 (6.2+20201114-2+deb11u1) over (6.2+20201114-2) ...[0m
+[0;32m    docker.python_base: Setting up libtinfo6:amd64 (6.2+20201114-2+deb11u1) ...[0m
+[0;32m    docker.python_base: (Reading database ... 23426 files and directories currently installed.)[0m
+[0;32m    docker.python_base: Preparing to unpack .../libudev1_247.3-7+deb11u2_amd64.deb ...[0m
+[0;32m    docker.python_base: Unpacking libudev1:amd64 (247.3-7+deb11u2) over (247.3-7+deb11u1) ...[0m
+[0;32m    docker.python_base: Setting up libudev1:amd64 (247.3-7+deb11u2) ...[0m
+[0;32m    docker.python_base: (Reading database ... 23426 files and directories currently installed.)[0m
+[0;32m    docker.python_base: Preparing to unpack .../0-tzdata_2021a-1+deb11u10_all.deb ...[0m
+[0;32m    docker.python_base: Unpacking tzdata (2021a-1+deb11u10) over (2021a-1+deb11u9) ...[0m
+[0;32m    docker.python_base: Preparing to unpack .../1-libmariadb-dev-compat_1%3a10.5.19-0+deb11u2_amd64.deb ...[0m
+[0;32m    docker.python_base: Unpacking libmariadb-dev-compat:amd64 (1:10.5.19-0+deb11u2) over (1:10.5.18-0+deb11u1) ...[0m
+[0;32m    docker.python_base: Preparing to unpack .../2-mariadb-common_1%3a10.5.19-0+deb11u2_all.deb ...[0m
+[0;32m    docker.python_base: Unpacking mariadb-common (1:10.5.19-0+deb11u2) over (1:10.5.18-0+deb11u1) ...[0m
+[0;32m    docker.python_base: Preparing to unpack .../3-libmariadb-dev_1%3a10.5.19-0+deb11u2_amd64.deb ...[0m
+[0;32m    docker.python_base: Unpacking libmariadb-dev (1:10.5.19-0+deb11u2) over (1:10.5.18-0+deb11u1) ...[0m
+[0;32m    docker.python_base: Preparing to unpack .../4-libmariadb3_1%3a10.5.19-0+deb11u2_amd64.deb ...[0m
+[0;32m    docker.python_base: Unpacking libmariadb3:amd64 (1:10.5.19-0+deb11u2) over (1:10.5.18-0+deb11u1) ...[0m
+[0;32m    docker.python_base: Preparing to unpack .../5-libpq-dev_13.10-0+deb11u1_amd64.deb ...[0m
+[0;32m    docker.python_base: Unpacking libpq-dev (13.10-0+deb11u1) over (13.9-0+deb11u1) ...[0m
+[0;32m    docker.python_base: Preparing to unpack .../6-libpq5_13.10-0+deb11u1_amd64.deb ...[0m
+[0;32m    docker.python_base: Unpacking libpq5:amd64 (13.10-0+deb11u1) over (13.9-0+deb11u1) ...[0m
+[0;32m    docker.python_base: Preparing to unpack .../7-libxml2-dev_2.9.10+dfsg-6.7+deb11u4_amd64.deb ...[0m
+[0;32m    docker.python_base: Unpacking libxml2-dev:amd64 (2.9.10+dfsg-6.7+deb11u4) over (2.9.10+dfsg-6.7+deb11u3) ...[0m
+[0;32m    docker.python_base: Preparing to unpack .../8-libxml2_2.9.10+dfsg-6.7+deb11u4_amd64.deb ...[0m
+[0;32m    docker.python_base: Unpacking libxml2:amd64 (2.9.10+dfsg-6.7+deb11u4) over (2.9.10+dfsg-6.7+deb11u3) ...[0m
+[0;32m    docker.python_base: Setting up libpq5:amd64 (13.10-0+deb11u1) ...[0m
+[0;32m    docker.python_base: Setting up linux-libc-dev:amd64 (5.10.178-3) ...[0m
+[0;32m    docker.python_base: Setting up libpq-dev (13.10-0+deb11u1) ...[0m
+[0;32m    docker.python_base: Setting up tzdata (2021a-1+deb11u10) ...[0m
+[0;32m    docker.python_base: debconf: unable to initialize frontend: Dialog[0m
+[0;32m    docker.python_base: debconf: (TERM is not set, so the dialog frontend is not usable.)[0m
+[0;32m    docker.python_base: debconf: falling back to frontend: Readline[0m
+[0;32m    docker.python_base:[0m
+[0;32m    docker.python_base: Current default time zone: 'Etc/UTC'[0m
+[0;32m    docker.python_base: Local time is now:      Wed May  3 08:53:57 UTC 2023.[0m
+[0;32m    docker.python_base: Universal Time is now:  Wed May  3 08:53:57 UTC 2023.[0m
+[0;32m    docker.python_base: Run 'dpkg-reconfigure tzdata' if you wish to change it.[0m
+[0;32m    docker.python_base:[0m
+[0;32m    docker.python_base: Setting up mariadb-common (1:10.5.19-0+deb11u2) ...[0m
+[0;32m    docker.python_base: Setting up libncurses6:amd64 (6.2+20201114-2+deb11u1) ...[0m
+[0;32m    docker.python_base: Setting up libmariadb3:amd64 (1:10.5.19-0+deb11u2) ...[0m
+[0;32m    docker.python_base: Setting up libncursesw6:amd64 (6.2+20201114-2+deb11u1) ...[0m
+[0;32m    docker.python_base: Setting up libmariadb-dev (1:10.5.19-0+deb11u2) ...[0m
+[0;32m    docker.python_base: Setting up libc-dev-bin (2.31-13+deb11u6) ...[0m
+[0;32m    docker.python_base: Setting up libxml2:amd64 (2.9.10+dfsg-6.7+deb11u4) ...[0m
+[0;32m    docker.python_base: Setting up libmariadb-dev-compat:amd64 (1:10.5.19-0+deb11u2) ...[0m
+[0;32m    docker.python_base: Setting up libxml2-dev:amd64 (2.9.10+dfsg-6.7+deb11u4) ...[0m
+[0;32m    docker.python_base: Setting up libc6-dev:amd64 (2.31-13+deb11u6) ...[0m
+[0;32m    docker.python_base: Setting up libncurses-dev:amd64 (6.2+20201114-2+deb11u1) ...[0m
+[0;32m    docker.python_base: Setting up libncursesw5-dev:amd64 (6.2+20201114-2+deb11u1) ...[0m
+[0;32m    docker.python_base: Setting up libncurses5-dev:amd64 (6.2+20201114-2+deb11u1) ...[0m
+[0;32m    docker.python_base: Processing triggers for libc-bin (2.31-13+deb11u6) ...[0m
+[0;32m    docker.python_base: Requirement already satisfied: pip in /usr/local/lib/python3.9/site-packages (22.0.4)[0m
+[0;32m    docker.python_base: Collecting pip[0m
+[0;32m    docker.python_base:   Downloading pip-23.1.2-py3-none-any.whl (2.1 MB)[0m
+[0;32m    docker.python_base:      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 2.1/2.1 MB 10.0 MB/s eta 0:00:00[0m
+[0;32m    docker.python_base: Installing collected packages: pip[0m
+[0;32m    docker.python_base:   Attempting uninstall: pip[0m
+[0;32m    docker.python_base:     Found existing installation: pip 22.0.4[0m
+[0;32m    docker.python_base:     Uninstalling pip-22.0.4:[0m
+[0;32m    docker.python_base:       Successfully uninstalled pip-22.0.4[0m
+[0;32m    docker.python_base: Successfully installed pip-23.1.2[0m
+[1;31m==> docker.python_base: WARNING: Running pip as the 'root' user can result in broken permissions and conflicting behaviour with the system package manager. It is recommended to use a virtual environment instead: https://pip.pypa.io/warnings/venv[0m
+[1;32m==> docker.python_base: Committing the container[0m
+[0;32m    docker.python_base: Image ID: sha256:1a333d6e19b1969e2179a37310eca5ab34199101c6c3ff6da70f5bc4695e03fd[0m
+[1;32m==> docker.python_base: Killing the container: ac8e04610082a6210c1fcdc9345cf2eb9e52e5c60e5561dd5d8ce4225f4021d0[0m
+[1;32m==> docker.python_base: Running post-processor:  (type docker-tag)[0m
+[0;32m    docker.python_base (docker-tag): Tagging image: sha256:1a333d6e19b1969e2179a37310eca5ab34199101c6c3ff6da70f5bc4695e03fd[0m
+[0;32m    docker.python_base (docker-tag): Repository: python:latest[0m
+[1;32mBuild 'docker.python_base' finished after 53 seconds 870 milliseconds.[0m
+
+==> Wait completed after 53 seconds 870 milliseconds
+
+==> Builds finished. The artifacts of successful builds are:
+--> docker.python_base: Imported Docker image: sha256:1a333d6e19b1969e2179a37310eca5ab34199101c6c3ff6da70f5bc4695e03fd
+--> docker.python_base: Imported Docker image: python:latest with tags python:latest
