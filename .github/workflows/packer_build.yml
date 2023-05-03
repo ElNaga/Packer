@@ -35,6 +35,10 @@ jobs:
         username: ${{ secrets.DOCKERHUB_USERNAME }}
         password: ${{ secrets.DOCKERHUB_TOKEN }}
 
+    - name: Make the file
+      id: mk_file
+      run: touch image_tag.txt
+
     - name: Set image tag
       id: set_tag
       run: echo "::set-output name=tag::$(cat image_tag.txt)" 
