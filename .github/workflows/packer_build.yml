@@ -42,7 +42,7 @@ jobs:
 
     - name: Tag Docker image
       run: |
-        docker tag python:latest${{ secrets.DOCKERHUB_USERNAME }}/python-kube:latest
+        docker tag python:latest ${{ secrets.DOCKERHUB_USERNAME }}/python-kube:latest
 
     - name: Push Docker image to Docker Hub
       run: |
