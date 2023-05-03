@@ -25,7 +25,9 @@ jobs:
 
     - name: Build Docker image
       run: |
-        packer build python_image.pkr.hcl | tee output.log
+        packer build -var 'image_tag_file=image_tag.txt' python_image.pkr.hcl | tee output.log
+      env:
+        PACKER_LOG: 1
 
     - name: Log in to Docker Hub
       uses: docker/login-action@v1
@@ -35,12 +37,14 @@ jobs:
 
     - name: Set image tag
       id: set_tag
-      run: echo "::set-output name=tag::latest"
+      run: echo "::set-output name=tag::$(cat image_tag.txt)" 
 
 
     - name: Tag Docker image
       run: |
-        docker tag python:latest ${{ secrets.DOCKERHUB_USERNAME }}/python-kube:latest
+        docker tag $(cat image_tag.txt) ${{ secrets.DOCKERHUB_USERNAME }}/python-kube:latest
+
+
     - name: Push Docker image to Docker Hub
       run: |
         docker push ${{ secrets.DOCKERHUB_USERNAME }}/python-kube:latest
