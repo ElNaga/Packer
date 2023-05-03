@@ -35,18 +35,15 @@ jobs:
         username: ${{ secrets.DOCKERHUB_USERNAME }}
         password: ${{ secrets.DOCKERHUB_TOKEN }}
 
-    - name: Make the file
-      id: mk_file
-      run: touch image_tag.txt
-
     - name: Set image tag
       id: set_tag
-      run: echo "::set-output name=tag::$(cat image_tag.txt)" 
+      run: latest_image=$(docker images --format '{{.Repository}}:{{.Tag}}' | head -n 1)
+
 
 
     - name: Tag Docker image
       run: |
-        docker tag $(cat image_tag.txt) ${{ secrets.DOCKERHUB_USERNAME }}/python-kube:latest
+        docker tag $latest_image ${{ secrets.DOCKERHUB_USERNAME }}/python-kube:latest
 
 
     - name: Push Docker image to Docker Hub
