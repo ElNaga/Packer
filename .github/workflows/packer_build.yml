@@ -26,14 +26,17 @@ jobs:
     - name: Build Docker image
       run: |
         packer build python_image.pkr.hcl | tee output.log
-        export IMAGE_ID=$(cat output.log | grep 'docker' | awk '{print $NF}')
-        IMAGE_ID=$(echo "$IMAGE_ID" | tail -n 1)
 
     - name: Log in to Docker Hub
       uses: docker/login-action@v1
       with:
         username: ${{ secrets.DOCKERHUB_USERNAME }}
         password: ${{ secrets.DOCKERHUB_TOKEN }}
+
+    - name: Set image tag
+      id: set_tag
+      run: echo "::set-output name=tag::latest"
+
 
     - name: Tag Docker image
       run: |
