@@ -23,9 +23,6 @@ jobs:
         echo "deb [signed-by=/usr/share/keyrings/hashicorp-archive-keyring.gpg] https://apt.releases.hashicorp.com $(lsb_release -cs) main" | sudo tee /etc/apt/sources.list.d/hashicorp.list
         sudo apt-get update && sudo apt-get install packer
 
-    - name: Set working directory
-      run: cd ~
-
     - name: Build Docker image
       run: |
         packer build -var 'image_tag_file=image_tag.txt' python_image.pkr.hcl | tee output.log
@@ -38,20 +35,22 @@ jobs:
         username: ${{ secrets.DOCKERHUB_USERNAME }}
         password: ${{ secrets.DOCKERHUB_TOKEN }}
 
+    - name: Make the file
+      id: mk_file
+      run: touch image_tag.txt
+
     - name: Set image tag
       id: set_tag
       run: echo "::set-output name=tag::$(cat image_tag.txt)" 
 
+
     - name: Tag Docker image
       run: |
-        IMAGE_TAG=$(cat image_tag.txt)
-        docker tag $IMAGE_TAG ${{ secrets.DOCKERHUB_USERNAME }}/python-kube:$IMAGE_TAG
-        docker tag $IMAGE_TAG ${{ secrets.DOCKERHUB_USERNAME }}/python-kube:latest
+        docker tag $(cat image_tag.txt) ${{ secrets.DOCKERHUB_USERNAME }}/python-kube:latest
+
 
     - name: Push Docker image to Docker Hub
       run: |
-        IMAGE_TAG=$(cat image_tag.txt)
-        docker push ${{ secrets.DOCKERHUB_USERNAME }}/python-kube:$IMAGE_TAG
         docker push ${{ secrets.DOCKERHUB_USERNAME }}/python-kube:latest
 
       env:
