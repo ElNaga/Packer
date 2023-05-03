@@ -43,6 +43,16 @@ jobs:
 
     - name: Tag Docker image
       run: |
+        echo $latest_image
+        echo $latest_image
+        echo $latest_image
+        echo $latest_image
+        echo $latest_image
+        echo $latest_image
+        echo $latest_image
+        echo $latest_image
+        echo $latest_image
+        echo $latest_image
         docker tag $latest_image ${{ secrets.DOCKERHUB_USERNAME }}/python-kube:latest
 
 
