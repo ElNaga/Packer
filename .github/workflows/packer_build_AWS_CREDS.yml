@@ -35,6 +35,7 @@ jobs:
         aws ecr get-login-password --region ${{ secrets.AWS_REGION }} | docker login --username AWS --password-stdin ${{ secrets.AWS_REGISTRY_URL }}
 
 
+
     - name: Configure AWS credentials
       uses: aws-actions/configure-aws-credentials@v1
       with:
