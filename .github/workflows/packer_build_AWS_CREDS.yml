@@ -38,7 +38,10 @@ jobs:
 
     - name: Create ECR repository
       run: |
-        aws ecr create-repository --repository-name my-repo --image-scanning-configuration scanOnPush=true
+        REPO_EXISTS=$(aws ecr describe-repositories --repository-names my-repo 2>/dev/null || echo "not-exist")
+        if [[ $REPO_EXISTS == "not-exist" ]]; then
+          aws ecr create-repository --repository-name my-repo --image-scanning-configuration scanOnPush=true
+        fi
 
     - name: Set image tag
       id: set_tag
